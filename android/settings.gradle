@@ -1,0 +1,3 @@
+rootProject.name = 'YunMusic'
+
+include ':app'
