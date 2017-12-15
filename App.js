@@ -35,8 +35,8 @@ export default class App extends Component<{}> {
             <View style={styles.container}>
                 <StatusBar backgroundColor={'red'} animated={true}/>
                 {this.state.isSearch ? this.getSearchTitleBar() : this.getTitleBar()}
-                {this.getContentView()}
-                {this.getSearchHistoryView()}
+                {this.state.isSearch ? this.getContentView() : null}
+                {this.state.isSearch ? this.getSearchHistoryView() : null}
             </View>
         );
     }
